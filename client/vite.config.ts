@@ -16,4 +16,12 @@ export default defineConfig({
       },
     },
   },
+  build: {
+    outDir: 'dist', // Specify output directory
+    emptyOutDir: true, // Clean the output directory before building
+    sourcemap: true, // Generate source maps for debugging
+    rollupOptions: {
+      input: './index.html', // Entry point for the app
+    },
+  },
 });
